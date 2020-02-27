@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lombok">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/mysql-connector-java-8.0.19.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

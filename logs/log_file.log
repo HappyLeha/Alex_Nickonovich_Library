@@ -1,0 +1,8 @@
+2020-02-27 20:57:17 INFO  Manager:54 - Author Herbert Schildt was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:59 - Publishing Williams was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:37 - Book Java the complete reference was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:37 - Book Philosophy of java was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:49 - Reader Alex Novak was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:49 - Reader Anna Polonskaya was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:49 - Reader Martin Stolz was created and aded to collection
+2020-02-27 20:57:17 INFO  Manager:119 - Searching result Book(title=Java the complete reference, year=2013, publishing=Optional[Williams], date=null, countOfInstances=1, image=null, authorsFirstNames=[Herbert], authorsLastNames=[Schildt])
