@@ -8,9 +8,8 @@ gender varchar(100),
 primary key(firstName,lastName)
 );
 create table if not exists Publishings (
-title varchar(100) primary key,
 country varchar(100),
-address varchar(100),
+address varchar(100) primary key,
 postIndex INT,
 email varchar(100)
 );
@@ -23,14 +22,14 @@ countOfInstances int,
 image Blob,
 constraint publishing_books 
 foreign key (publishing)
-references publishings (title)
+references publishings (address)
 );
 create table if not exists Books_has_Authors(
 book varchar(100),
 author_firstName varchar(100),
 author_lastName varchar(100),
 constraint books_connection foreign key(book) 
-references Books(title),
+references Books(title) on delete cascade on update cascade,
 constraint authors_connection 
 foreign key (author_firstName,author_lastName)
 references Authors(firstName,lastName)
@@ -56,6 +55,9 @@ references Readers(firstName,lastName),
 constraint Book_Rent foreign key(book)
 references Books(title)
 );
+create view searched as select distinct 
+title,year,publishing,reader_lastName as lastName 
+from books left join rents on title=book;
 
 
 

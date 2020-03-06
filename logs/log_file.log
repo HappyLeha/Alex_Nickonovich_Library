@@ -1,8 +1,13 @@
-2020-02-28 08:45:37 INFO  Manager:51 - Author Herbert Schildt was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:56 - Publishing Williams was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:34 - Book Java the complete reference was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:34 - Book Philosophy of java was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:46 - Reader Alex Novak was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:46 - Reader Anna Polonskaya was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:46 - Reader Martin Stolz was created and aded to collection
-2020-02-28 08:45:37 INFO  Manager:116 - Searching result Book(title=Java the complete reference, year=2013, publishing=Optional[Williams], date=null, countOfInstances=1, image=null, authorsFirstNames=[Herbert], authorsLastNames=[Schildt])
+2020-03-06 23:09:08 INFO  Manager:59 - Publishing(country=null, address=St.Peterburg, index=0, email=null)
+2020-03-06 23:09:08 INFO  Manager:62 - Author(firstName=Herbert, lastName=Schildt, year=0, gender=null, note=null)
+2020-03-06 23:09:08 INFO  Manager:65 - Book(title=Java the complete reference, year=0, publishing=Optional[St.Peterburg], date=null, countOfInstances=0, image=null, authorsFirstNames=Optional.empty, authorsLastNames=Optional.empty, readersFirstNames=Optional[[Martin]], readersLastNames=Optional[[Stolz]])
+2020-03-06 23:09:08 INFO  Manager:65 - Book(title=Philosophy of java, year=0, publishing=Optional.empty, date=null, countOfInstances=0, image=null, authorsFirstNames=Optional.empty, authorsLastNames=Optional.empty, readersFirstNames=Optional[[]], readersLastNames=Optional[[]])
+2020-03-06 23:09:08 INFO  Manager:68 - Reader(firstName=Alex, lastName=Novak, year=0, email=null, phone=null, image=null, rent=Optional.empty)
+2020-03-06 23:09:08 INFO  Manager:68 - Reader(firstName=Anna, lastName=Polonskaya, year=0, email=null, phone=null, image=null, rent=Optional.empty)
+2020-03-06 23:09:08 INFO  Manager:68 - Reader(firstName=Martin, lastName=Stolz, year=0, email=null, phone=null, image=null, rent=Optional[Reader.Rent(book=Java the complete reference, startDate=null, endDate=null)])
+2020-03-06 23:09:08 INFO  Manager:70 - Author(firstName=Herbert, lastName=Schildt, year=0, gender=MAN, note=null)
+2020-03-06 23:09:08 INFO  Manager:71 - Publishing(country=Russia, address=St.Peterburg, index=0, email=null)
+2020-03-06 23:09:08 INFO  Manager:72 - Book(title=Java the complete reference, year=2013, publishing=Optional[St.Peterburg], date=null, countOfInstances=1, image=null, authorsFirstNames=Optional[[]], authorsLastNames=Optional[[]], readersFirstNames=Optional.empty, readersLastNames=Optional.empty)
+2020-03-06 23:09:08 INFO  Manager:73 - Reader(firstName=Martin, lastName=Stolz, year=1998, email=martinstolz@gmail.com, phone=null, image=null, rent=Optional.empty)
+2020-03-06 23:09:08 INFO  Manager:74 - Reader.Rent(book=Java the complete reference, startDate=1970-01-01, endDate=1970-01-01)
+2020-03-06 23:09:08 INFO  Manager:77 - Result of searching Book(title=Java the complete reference, year=2013, publishing=Optional[St.Peterburg], date=null, countOfInstances=1, image=null, authorsFirstNames=Optional[[]], authorsLastNames=Optional[[]], readersFirstNames=Optional.empty, readersLastNames=Optional.empty)
