@@ -1,5 +1,6 @@
 package alexnickonovich.library.entities;
 import alexnickonovich.library.enums.Gender;
+import alexnickonovich.library.interfaces.JsonSerializable;
 import lombok.*;
 
 @Setter
@@ -8,7 +9,7 @@ import lombok.*;
 @EqualsAndHashCode(of={"firstName","lastName"})
 @NoArgsConstructor
 @AllArgsConstructor
-public class Author implements Comparable<Author> {
+public class Author implements Comparable<Author>, JsonSerializable {
     @NonNull private String firstName;
     @NonNull private String lastName;
     private Integer year;

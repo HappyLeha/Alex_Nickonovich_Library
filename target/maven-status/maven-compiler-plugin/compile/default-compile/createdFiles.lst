@@ -1,15 +1,11 @@
 alexnickonovich\library\entities\Publishing.class
-alexnickonovich\library\interfaces\ICopier.class
 alexnickonovich\library\entities\Author.class
 alexnickonovich\library\managment\Manager.class
-alexnickonovich\library\exceptions\NoSuchMainEntityException.class
 alexnickonovich\library\entities\Reader$Rent.class
 alexnickonovich\library\exceptions\AlreadyExistEntityException.class
 alexnickonovich\library\exceptions\RestrictException.class
 alexnickonovich\library\enums\Gender.class
 alexnickonovich\library\managment\Main.class
 alexnickonovich\library\entities\Book.class
-util\Controller.class
 util\ConnectorDB.class
-alexnickonovich\library\exceptions\CountOfInstancesException.class
 alexnickonovich\library\entities\Reader.class

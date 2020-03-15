@@ -1,4 +1,5 @@
 package alexnickonovich.library.entities;
+import alexnickonovich.library.interfaces.JsonSerializable;
 import lombok.*;
 
 @Getter
@@ -7,7 +8,7 @@ import lombok.*;
 @EqualsAndHashCode(of={"title"})
 @NoArgsConstructor
 @AllArgsConstructor
-public class Publishing implements Comparable<Publishing> {
+public class Publishing implements Comparable<Publishing>, JsonSerializable {
     private String country;
     @NonNull private String address;
     private Integer index;

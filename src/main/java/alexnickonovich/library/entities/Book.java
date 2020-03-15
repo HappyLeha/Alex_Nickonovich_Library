@@ -1,4 +1,9 @@
 package alexnickonovich.library.entities;
+import alexnickonovich.library.interfaces.JsonSerializable;
+import alexnickonovich.library.json.LocalDateDeserializer;
+import alexnickonovich.library.json.LocalDateSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;
 import java.sql.Blob;
 import java.time.LocalDate;
@@ -11,10 +16,12 @@ import java.util.Optional;
 @EqualsAndHashCode(of={"title"})
 @NoArgsConstructor
 @AllArgsConstructor
-public class Book implements Comparable<Book> {
+public class Book implements Comparable<Book>, JsonSerializable {
     @NonNull private String title;
     private Integer year;
     @NonNull private Optional<String> publishing;
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate date;
     @NonNull  private Integer countOfInstances;
     private Blob image;

@@ -133,8 +133,8 @@ public class Manager {
             Reader reader=new Reader(firstName,lastName,0,null,null,null,Optional.empty());
             LocalDate startDate=resultSet.getDate(4)==null?null:resultSet.getDate(4).toLocalDate();
             LocalDate endDate=resultSet.getDate(5)==null?null:resultSet.getDate(5).toLocalDate();
-            Reader.Rent rent=reader.new Rent(resultSet.getString(3),startDate,endDate);
-            return rent;
+            reader.setRent(resultSet.getString(3),startDate,endDate);
+            return reader.getRent().get();
         }
         else {
             return null;
@@ -180,7 +180,6 @@ public class Manager {
         return books;
     }
     public ArrayList<Reader> getReaders() throws SQLException {
-
         ArrayList<Reader> readers=new ArrayList<>();
         Statement statement = connection.createStatement();
         ResultSet resultSet=statement.executeQuery(SQL_GET_READERS);
@@ -188,8 +187,9 @@ public class Manager {
             readers.add(new Reader(resultSet.getString(1),resultSet.getString(2),0,null,null,null,Optional.empty()));
             Reader reader=readers.get(readers.size()-1);
             String book=resultSet.getString(3);
-            Optional<Reader.Rent> rent=book==null?Optional.ofNullable(null):Optional.ofNullable(reader.new Rent(book,null,null));
-            reader.setRent(rent);
+            if (book!=null) {
+                reader.setRent(book,null,null);
+            }
         }
         return readers;
     }
@@ -202,8 +202,6 @@ public class Manager {
             readers.add(new Reader(resultSet.getString(1),resultSet.getString(2),0,null,null,null,Optional.empty()));
             Reader reader=readers.get(readers.size()-1);
             String book=resultSet.getString(3);
-            Optional<Reader.Rent> rent=book==null?Optional.ofNullable(null):Optional.ofNullable(reader.new Rent(book,null,null));
-            reader.setRent(rent);
         }
         return readers;
     }
